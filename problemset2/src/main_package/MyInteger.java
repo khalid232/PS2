@@ -5,17 +5,17 @@ public class MyInteger {
 	 * 
 	 */
 	public void setValue(int pardfVar){
-		this.value=pardfVar;
+		this.ivalue=pardfVar;
 	}
 
 		public MyInteger(){
 		}
 		public void MyInteger(int setavalue) {
-			this.value = setavalue;	
+			this.ivalue = setavalue;	
 		}
 
 		public int getValue(){
-			return this.value;
+			return this.ivalue;
 		}
 
 
@@ -36,14 +36,14 @@ public class MyInteger {
 
 
 	public boolean isOdd(){
-		if (value%2==1){
+		if (ivalue%2==1){
 			return true;
 		}
 		return false;
 	}
 
 	public boolean isEven(){
-		if (value%2==0){
+		if (ivalue%2==0){
 			return true;
 		}
 		return false;
@@ -51,8 +51,8 @@ public class MyInteger {
 
 
 	public boolean isPrime(){
-		for (int i=2; i<=value/2; i++){
-			if(value % i == 0){
+		for (int i=2; i<=ivalue/2; i++){
+			if(ivalue % i == 0){
 				return false;
 			}
 		}
@@ -85,10 +85,10 @@ public class MyInteger {
 		}
 		return true;
 	}
-	private int value;
+	private int ivalue;
 
 	public boolean equals(int somenbr){
-		if (value==somenbr){
+		if (ivalue==somenbr){
 			return true;
 		}
 		return false;
@@ -105,7 +105,7 @@ public class MyInteger {
 
 
 	public boolean equals(MyInteger myObjections){
-		if (myObjections.getValue()==value){
+		if (myObjections.getValue()==ivalue){
 			return true;
 		}
 		return false;
